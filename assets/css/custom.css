@@ -338,7 +338,7 @@ video {
   border: 0;
 }
 
-/* ===== PORTAL DE PROYECTOS ===== */\n.side-bar .site-title {\n  font-size: 1.1rem;\n  line-height: 1.2;\n}
+/* ===== PORTAL DE PROYECTOS ===== */\n.side-bar .site-footer { display: none !important; }\n.side-bar .site-title {\n  font-size: 1.1rem;\n  line-height: 1.2;\n}
 .portfolio-hero {
   margin: 0 0 2.5rem;
   padding: clamp(2rem, 5vw, 4rem);
@@ -387,7 +387,7 @@ video {
   text-decoration: none;
 }
 
-.portfolio-hero .btn:not(.btn-primary) {\n  background: rgba(255,255,255,.10);\n}\n\n.portfolio-hero .btn-primary {
+.portfolio-hero .btn:not(.btn-primary) {\n  background: rgba(105,0,24,.62) !important;\n}\n\n.portfolio-hero .btn-primary {
   border-color: #ffffff;
   background: #ffffff;
   color: #9d0024 !important;
