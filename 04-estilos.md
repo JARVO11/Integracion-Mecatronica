@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Estilos y personalización visual
-nav_order: 5
+nav_order: 5\nnav_exclude: true\nsearch_exclude: true
 ---
 
 # Estilos y personalización visual

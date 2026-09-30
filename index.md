@@ -4,21 +4,70 @@ title: Inicio
 nav_order: 1
 ---
 
-# Plantilla de documentación con Just the Docs
+<div class="portfolio-hero">
+  <p class="portfolio-eyebrow">PORTAFOLIO DE INTEGRACIÓN MECATRÓNICA</p>
+  <h1>Diseñamos, fabricamos y documentamos</h1>
+  <p class="portfolio-hero__lead">
+    Este portal reúne el desarrollo completo de nuestros proyectos: desde la idea y el diseño CAD
+    hasta la fabricación, el ensamble, la programación y las pruebas físicas.
+  </p>
+  <div class="portfolio-hero__actions">
+    <a class="btn btn-primary" href="#proyectos">Explorar proyectos</a>
+    <a class="btn" href="https://github.com/JARVO11/documentacion-robot-limpia-playas">Ver repositorio</a>
+  </div>
+</div>
 
-Este repositorio está diseñado para entender como utilizar la plantilla de repositorio que utiliza **"Just the docs"** de Jekyll y el lenguaje **"Markdown"**:
+<h2 id="proyectos">Proyectos</h2>
 
-1. **Crear y publicar** el sitio en GitHub Pages.
-2. Aprender la **estructura** típica de un repo de documentación.
-3. Dominar **Markdown** (texto, listas, tablas, código).
-4. Configurar la **navegación** (sidebar, secciones, orden).
-5. Agregar **imágenes, videos** y otros recursos.
-6. Ajustar **estilos** (logo, colores, footer).
+<p class="portfolio-section-lead">
+  Cada sección funcionará como una bitácora técnica con planos, modelos 3D, fotografías,
+  videos, resultados y archivos descargables.
+</p>
 
+<div class="project-grid">
+  <a class="project-card project-card--featured" href="{{ '/brazo-robotico-3gdl/' | relative_url }}">
+    <span class="project-card__number">01</span>
+    <span class="project-badge">En desarrollo</span>
+    <h3>Brazo robótico de 3 GDL</h3>
+    <p>Diseño CAD, piezas impresas en 3D, estructura de MDF cortada con láser, ensamble y pruebas tomando objetos.</p>
+    <span class="project-card__link">Ver proyecto <span aria-hidden="true">→</span></span>
+  </a>
 
-Contenido:
-- [1. Publicar en GitHub Pages](01-publicar-en-github-pages.md)
-- [2. Estructura del repositorio](02-estructura-del-repo.md)
-- [3. Escribir en Markdown](03-markdown.md)
-- [4. Personalización visual](04-estilos.md)
+  <a class="project-card" href="{{ '/robot-limpia-playas/' | relative_url }}">
+    <span class="project-card__number">02</span>
+    <span class="project-badge project-badge--outline">En documentación</span>
+    <h3>Robot limpia playas</h3>
+    <p>Diseño y fabricación de un robot para apoyar la recolección de residuos, con documentación mecánica, electrónica y de pruebas.</p>
+    <span class="project-card__link">Ver proyecto <span aria-hidden="true">→</span></span>
+  </a>
 
+  <a class="project-card" href="{{ '/fabricacion-pcb-kicad/' | relative_url }}">
+    <span class="project-card__number">03</span>
+    <span class="project-badge project-badge--outline">En documentación</span>
+    <h3>Fabricación de PCB con KiCad</h3>
+    <p>Proceso completo desde el esquema y diseño de pistas hasta la fabricación, soldadura y validación de la placa.</p>
+    <span class="project-card__link">Ver proyecto <span aria-hidden="true">→</span></span>
+  </a>
+</div>
+
+## Cómo se organizará la documentación
+
+<div class="documentation-flow">
+  <div class="documentation-flow__item">
+    <span>1</span>
+    <h3>Diseño</h3>
+    <p>Requisitos, bocetos, cálculos, planos, CAD y decisiones técnicas.</p>
+  </div>
+  <div class="documentation-flow__item">
+    <span>2</span>
+    <h3>Fabricación</h3>
+    <p>Materiales, impresión 3D, corte láser, electrónica y ensamble físico.</p>
+  </div>
+  <div class="documentation-flow__item">
+    <span>3</span>
+    <h3>Validación</h3>
+    <p>Programación, videos de funcionamiento, pruebas, resultados y mejoras.</p>
+  </div>
+</div>
+
+> La estructura crecerá de forma progresiva. Empezaremos con el **brazo robótico de 3 GDL** y añadiremos el material técnico conforme esté disponible.
