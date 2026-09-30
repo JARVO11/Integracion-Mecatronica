@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Siguiente pagina MD
-nav_order: 6\nnav_exclude: true\nsearch_exclude: true
+nav_order: 6
+nav_exclude: true
+search_exclude: true
 ---
 
 AHDIAHDIADHIDFAIDHAIEFDIAENFDF
