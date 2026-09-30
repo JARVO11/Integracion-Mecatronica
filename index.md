@@ -28,7 +28,7 @@ nav_order: 1
   <a class="project-card project-card--featured" href="{{ '/brazo-robotico-3gdl/' | relative_url }}">
     <span class="project-card__number">01</span>
     <span class="project-badge">En desarrollo</span>
-    <h3>Brazo robótico de 3 GDL</h3>
+    <span class="project-card__title">Brazo robótico de 3 GDL</span>
     <p>Diseño CAD, piezas impresas en 3D, estructura de MDF cortada con láser, ensamble y pruebas tomando objetos.</p>
     <span class="project-card__link">Ver proyecto <span aria-hidden="true">→</span></span>
   </a>
@@ -36,7 +36,7 @@ nav_order: 1
   <a class="project-card" href="{{ '/robot-limpia-playas/' | relative_url }}">
     <span class="project-card__number">02</span>
     <span class="project-badge project-badge--outline">En documentación</span>
-    <h3>Robot limpia playas</h3>
+    <span class="project-card__title">Robot limpia playas</span>
     <p>Diseño y fabricación de un robot para apoyar la recolección de residuos, con documentación mecánica, electrónica y de pruebas.</p>
     <span class="project-card__link">Ver proyecto <span aria-hidden="true">→</span></span>
   </a>
@@ -44,7 +44,7 @@ nav_order: 1
   <a class="project-card" href="{{ '/fabricacion-pcb-kicad/' | relative_url }}">
     <span class="project-card__number">03</span>
     <span class="project-badge project-badge--outline">En documentación</span>
-    <h3>Fabricación de PCB con KiCad</h3>
+    <span class="project-card__title">Fabricación de PCB con KiCad</span>
     <p>Proceso completo desde el esquema y diseño de pistas hasta la fabricación, soldadura y validación de la placa.</p>
     <span class="project-card__link">Ver proyecto <span aria-hidden="true">→</span></span>
   </a>
@@ -55,17 +55,17 @@ nav_order: 1
 <div class="documentation-flow">
   <div class="documentation-flow__item">
     <span>1</span>
-    <h3>Diseño</h3>
+    <span class="project-card__title">Diseño</span>
     <p>Requisitos, bocetos, cálculos, planos, CAD y decisiones técnicas.</p>
   </div>
   <div class="documentation-flow__item">
     <span>2</span>
-    <h3>Fabricación</h3>
+    <span class="project-card__title">Fabricación</span>
     <p>Materiales, impresión 3D, corte láser, electrónica y ensamble físico.</p>
   </div>
   <div class="documentation-flow__item">
     <span>3</span>
-    <h3>Validación</h3>
+    <span class="project-card__title">Validación</span>
     <p>Programación, videos de funcionamiento, pruebas, resultados y mejoras.</p>
   </div>
 </div>
