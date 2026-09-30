@@ -16,10 +16,10 @@ struct Articulacion {
 };
 
 Articulacion articulaciones[] = {
-  {'B', "Base",    0, 20, 160, 600, 2400, 90},
-  {'H', "Hombro", 1, 35, 145, 600, 2400, 90},
-  {'C', "Codo",    2, 25, 155, 600, 2400, 90},
-  {'G', "Garra",   3, 30,  90, 600, 2400, 45}
+  {'B', "Base",    0, 20, 160, 1000, 2000, 90},
+  {'H', "Hombro", 1, 35, 145, 1000, 2000, 90},
+  {'C', "Codo",    2, 25, 155, 1000, 2000, 90},
+  {'G', "Garra",   3, 30,  90, 1000, 2000, 45}
 };
 
 constexpr size_t NUM_ARTICULACIONES = sizeof(articulaciones) / sizeof(articulaciones[0]);
