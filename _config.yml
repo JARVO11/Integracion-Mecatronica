@@ -27,7 +27,10 @@ search:
   heading_level: 2
 
 # Ejemplo de enlace auxiliar (aparece arriba a la derecha)
-aux_links:\n  "Repositorio del portafolio":\n    - "https://github.com/JARVO11/documentacion-robot-limpia-playas"\n
+aux_links:
+  "Repositorio del portafolio":
+    - "https://github.com/JARVO11/documentacion-robot-limpia-playas"
+
 # Enlaces
 permalink: pretty
 
