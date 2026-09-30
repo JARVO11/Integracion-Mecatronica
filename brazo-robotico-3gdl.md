@@ -2,49 +2,55 @@
 layout: default
 title: Brazo robótico de 3 GDL
 nav_order: 2
+has_children: true
 ---
 
 <div class="project-page-header">
   <p class="portfolio-eyebrow">PROYECTO 01 · EN DESARROLLO</p>
   <h1>Brazo robótico de 3 GDL</h1>
-  <p>Diseño y construcción de un brazo robótico combinando piezas impresas en 3D y componentes de MDF fabricados mediante corte láser.</p>
+  <p>Diseño y construcción de un brazo robótico escolar con estructura de MDF cortada en láser, piezas impresas en 3D y control electrónico mediante ESP32.</p>
 </div>
 
-## Objetivo del proyecto
+## Descripción general
 
-Diseñar, fabricar y probar un brazo robótico de **tres grados de libertad (3 GDL)** capaz de posicionarse y tomar objetos. La documentación permitirá seguir la evolución del proyecto desde el modelo digital hasta las pruebas del prototipo físico.
+El proyecto busca fabricar un brazo capaz de posicionarse y tomar objetos. El mecanismo tiene **tres grados de libertad (3 GDL)** y utiliza **cuatro servomotores**:
 
-## Estructura prevista
+| Actuador | Función | Clasificación |
+|:--|:--|:--|
+| Servo 1 | Giro de la base | GDL 1 |
+| Servo 2 | Movimiento del hombro | GDL 2 |
+| Servo 3 | Movimiento del codo | GDL 3 |
+| Servo 4 | Apertura y cierre de la pinza | Efector final |
+
+El servo de la pinza no se cuenta como un cuarto grado de libertad de posicionamiento porque su función es sujetar el objeto. Las **perillas visibles en el ensamble CAD son referencias del modelo y no se utilizarán** en la versión final.
+
+## Documentación del proyecto
 
 <div class="topic-grid">
-  <div class="topic-card">
-    <strong>01 · Diseño mecánico</strong>
-    <p>Requisitos, dimensiones, selección de materiales y decisiones de diseño.</p>
-  </div>
-  <div class="topic-card">
-    <strong>02 · Modelado CAD</strong>
-    <p>Planos de piezas, ensamble en software CAD, renderizados y modelo 3D interactivo.</p>
-  </div>
-  <div class="topic-card">
-    <strong>03 · Fabricación</strong>
-    <p>Impresión 3D de componentes y corte láser de las piezas de MDF.</p>
-  </div>
-  <div class="topic-card">
-    <strong>04 · Ensamble físico</strong>
-    <p>Fotografías y videos del montaje mecánico, eléctrico y electrónico.</p>
-  </div>
-  <div class="topic-card">
-    <strong>05 · Control</strong>
-    <p>Configuración de actuadores, programación y estrategia de movimiento.</p>
-  </div>
-  <div class="topic-card">
-    <strong>06 · Pruebas</strong>
-    <p>Videos del brazo tomando objetos, resultados, limitaciones y mejoras.</p>
+  <a class="topic-card topic-card--link" href="{{ '/brazo-diseno-cad/' | relative_url }}">
+    <strong>01 · Diseño CAD y piezas</strong>
+    <p>Ensamble general, galería de componentes y función de las primeras piezas recibidas.</p>
+    <span>Ver diseño →</span>
+  </a>
+  <a class="topic-card topic-card--link" href="{{ '/brazo-materiales/' | relative_url }}">
+    <strong>02 · Materiales y fabricación</strong>
+    <p>Lista preliminar de materiales, recomendaciones de fabricación y alimentación eléctrica.</p>
+    <span>Ver materiales →</span>
+  </a>
+  <a class="topic-card topic-card--link" href="{{ '/brazo-electronica-control/' | relative_url }}">
+    <strong>03 · Electrónica y control</strong>
+    <p>Conexiones, comandos y código inicial del ESP32 para controlar los cuatro servos.</p>
+    <span>Ver control →</span>
+  </a>
+  <div class="topic-card topic-card--pending">
+    <strong>04 · Ensamble y pruebas</strong>
+    <p>Próximamente: fotografías, videos, calibración, toma de objetos y resultados.</p>
+    <span>En preparación</span>
   </div>
 </div>
 
 ## Estado actual
 
-La estructura de documentación ya está preparada. Los planos, archivos CAD, imágenes, videos y resultados se incorporarán progresivamente para mantener una secuencia clara del desarrollo.
+Se integró la primera entrega de capturas CAD, una lista preliminar de materiales y un programa base para el ESP32. La documentación se ampliará conforme estén disponibles las piezas restantes, dimensiones, archivos de fabricación, fotografías y videos.
 
-> **Siguiente actualización:** integrar el material disponible del diseño mecánico y del ensamble CAD.
+> **Importante:** antes de cortar MDF o comprar servos se deben comprobar las dimensiones reales de las ranuras, soportes y ejes en los archivos CAD.

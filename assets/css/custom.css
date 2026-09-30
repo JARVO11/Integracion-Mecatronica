@@ -576,3 +576,84 @@ video {
     transition: none;
   }
 }
+
+/* ===== DOCUMENTACIÓN DEL BRAZO 3 GDL ===== */
+.topic-card--link {
+  display: flex;
+  min-height: 180px;
+  flex-direction: column;
+  color: #2f3237 !important;
+  text-decoration: none !important;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.topic-card--link:hover {
+  transform: translateY(-3px);
+  border-color: rgba(224, 0, 52, .35);
+  box-shadow: 0 10px 24px rgba(25, 28, 33, .09);
+}
+
+.topic-card--link span,
+.topic-card--pending span {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: #E00034;
+  font-weight: 700;
+}
+
+.topic-card--pending span {
+  color: #7b8189;
+}
+
+.cad-feature,
+.cad-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e6e7ea;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(25, 28, 33, .06);
+}
+
+.cad-feature {
+  margin: 1rem 0 2rem;
+}
+
+.cad-feature img,
+.cad-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #f6f7f8;
+}
+
+.cad-feature figcaption,
+.cad-card figcaption {
+  padding: 1rem 1.1rem;
+  color: #5e646d;
+  line-height: 1.55;
+}
+
+.cad-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.cad-card img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .cad-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topic-card--link {
+    transition: none;
+  }
+}
